@@ -1,5 +1,5 @@
 # my-carousel
-This is a basic carousel which is fluid. You can set a few options. Hope it helps you out. You can comment and I'll help you out as much as I could :)
+This is a basic carousel build using `jquery`. It is fluid. You can set a few options. Hope it helps you out. You can comment and I'll help you out as much as I could :)
 
 Your comments are appreciated.
 
@@ -88,3 +88,5 @@ You can set the carousel to auto rotate after a set time period. Set `auto` as `
 ```
 
 You can also set the timing of auto change in line `7`. The timing is given in ms. Default is `5000`.
+
+> You can only have auto rotate if you set *continuous* as *true*
