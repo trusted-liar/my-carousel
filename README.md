@@ -82,7 +82,7 @@ If you want the cards to come in a circular/cyclic manner, you have to set it as
 By default it is set as `true`.
 
 <h4>Auto</h4>
-You can set the carousel to auto rotate after a set time period. Set `auto` as `true` in `my-carousel.js` file, line no `6`. `false` would disable it. By default it is `true`.
+You can set the carousel to auto rotate after a set time period. Set `auto` as `true` in `my-carousel.js` file, line no `6`. `false` would disable it. By default it is `false`.
 ```javascript
     auto: true,
 ```
