@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+}
+
+.my-carousel-slider{
+    perspective: 1000px;
+    height: 500px;
+    width: 100%;
+    background: rgba(0,0,0,0.855);
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-card{
+    height: 80%;
+    width: 66%;
+    background: #eeeeee;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-sizing: border-box;
+    z-index: 0;
+    transition: all 1s ease;
+    transform: scale(0.5) translateX(-100%) translateY(-100%);
+    -webkit-box-reflect: below 0px -webkit-gradient(linear,left top,left bottom, color-stop(0.5, transparent), to(rgba(0,0,0,0.5)));
+}
+
+.front{
+    transform: scale(1) translateX(-50%) translateY(-50%);
+    z-index: 5;
+}
+
+.left{
+    transform: scale(0.8) translateX(-93.75%) translateY(-62.5%);
+    z-index: 3;
+    background: #824413;
+}
+
+.right{
+    transform: scale(0.8) translateX(-31.25%) translateY(-62.5%);
+    z-index: 3;
+    background: #133949;
+}
+
+.leftest{
+    z-index: 1;
+    transform: scale(0.64) translateX(-140.625%) translateY(-78.125%);
+    background: #813548;
+}
+
+.rightest{
+    z-index: 1;
+    transform: scale(0.64) translateX(-15.625%) translateY(-78.125%);
+    background: #964471;
+}
+
+.left-click{
+    width: 50%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: rgba(0,0,0,0.3);
+}
+
+.left-click-2{
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 2;
+    background: rgba(214,5,5,1);
+}
+
+.right-click{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    background: rgba(0,0,0,0.3);
+}
