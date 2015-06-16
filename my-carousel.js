@@ -3,7 +3,7 @@ var carousel = (function(){
     
     var options = {
         continuous: true,
-        auto: true,
+        auto: false,
         autoTime: '5000'
     };
     
@@ -157,11 +157,6 @@ var carousel = (function(){
         }
     }
 
-    //This snippet automatically changes the cards after the interval specified
-    if((options.continuous==true)&&(options.auto==true)){
-        setInterval(rightLarge,options.autoTime);
-    }
-    
     $.fn.carousel = function(){
         var x = $(this).find('.carousel-card');
         
@@ -176,6 +171,10 @@ var carousel = (function(){
             $(this).find('.left-click')[0].addEventListener('click',leftLarge.bind(this));
         }
         
+        //This snippet automatically changes the cards after the interval specified
+        if((options.continuous==true)&&(options.auto==true)){
+        setInterval(rightLarge.bind(this),options.autoTime);
+        }
     }
 })();
 

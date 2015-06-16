@@ -19,6 +19,7 @@ body{
     left: 50%;
     top: 50%;
     box-sizing: border-box;
+    padding: 1.5%;
     z-index: 0;
     transition: all 1s ease;
     transform: scale(0.5) translateX(-100%) translateY(-100%);
@@ -33,25 +34,21 @@ body{
 .left{
     transform: scale(0.8) translateX(-93.75%) translateY(-62.5%);
     z-index: 3;
-    background: #824413;
 }
 
 .right{
     transform: scale(0.8) translateX(-31.25%) translateY(-62.5%);
     z-index: 3;
-    background: #133949;
 }
 
 .leftest{
     z-index: 1;
     transform: scale(0.64) translateX(-140.625%) translateY(-78.125%);
-    background: #813548;
 }
 
 .rightest{
     z-index: 1;
     transform: scale(0.64) translateX(-15.625%) translateY(-78.125%);
-    background: #964471;
 }
 
 .left-click{
@@ -81,4 +78,36 @@ body{
     left: 50%;
     top: 0%;
     background: rgba(0,0,0,0.3);
+}
+
+.card-0{
+    background-color: #FF4000;
+}
+
+.card-1{
+    background-color: #FFFF00;
+}
+
+.card-2{
+    background-color: #9AFE2E;
+}
+
+.card-3{
+    background-color: #00FF80;
+}
+
+.card-4{
+    background-color: #2EFEF7;
+}
+
+.card-5{
+    background-color: #0040FF;
+}
+
+.card-6{
+    background-color: #9A2EFE;
+}
+
+.card-7{
+    background-color: #FF00BF;
 }
