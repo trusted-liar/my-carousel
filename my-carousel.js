@@ -3,8 +3,8 @@ var carousel = (function(){
     
     var options = {
         continuous: true,
-        auto: false,
-        autoTime: '5000'
+        auto: true,
+        autoTime: '2000'
     };
     
         //Set the classes if the carousel has 3 or 4 cards
@@ -173,8 +173,15 @@ var carousel = (function(){
         
         //This snippet automatically changes the cards after the interval specified
         if((options.continuous==true)&&(options.auto==true)){
-        setInterval(rightLarge.bind(this),options.autoTime);
+        var auto = setInterval(rightLarge.bind(this),options.autoTime);
         }
+        
+        $(this).mouseenter(function(){
+            clearInterval(auto);
+        });
+        $(this).mouseleave(function(){
+            auto = setInterval(rightLarge.bind(this),options.autoTime);
+        });
     }
 })();
 
